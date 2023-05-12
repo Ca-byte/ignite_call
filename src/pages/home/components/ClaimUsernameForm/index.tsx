@@ -1,5 +1,5 @@
-import { Button, TextInput, Text } from '@ignite-ui/react'
-import { Form, FormAnnotation } from './styles'
+import { Button, TextInput } from '@ignite-ui/react'
+import { Form, FormAnnotation, FormError, FormInputTip } from './styles'
 import { ArrowRight } from 'phosphor-react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -45,11 +45,13 @@ export function ClaimUsernameForm() {
         </Button>
       </Form>
       <FormAnnotation>
-        <Text size="sm">
-          {errors.username
-            ? errors.username.message
-            : 'Enter a chosen username'}
-        </Text>
+        <FormError>
+          {errors.username ? (
+            errors.username.message
+          ) : (
+            <FormInputTip>Enter a chosen username</FormInputTip>
+          )}
+        </FormError>
       </FormAnnotation>
     </>
   )

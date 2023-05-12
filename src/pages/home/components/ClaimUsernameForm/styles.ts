@@ -21,3 +21,12 @@ export const FormAnnotation = styled('div', {
     color: '$gray200',
   },
 })
+
+export const FormError = styled('p', {
+  color: '#f75a68',
+  fontFamily: '$default',
+})
+
+export const FormInputTip = styled('span', {
+  color: '$gray200',
+})
