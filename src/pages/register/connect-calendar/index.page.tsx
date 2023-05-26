@@ -15,7 +15,6 @@ export default function ConnectCalendar() {
     await signIn('google')
   }
   const hasAuthError = !!router.query.error
-  console.log(session)
   return (
     <Container>
       <Header>
