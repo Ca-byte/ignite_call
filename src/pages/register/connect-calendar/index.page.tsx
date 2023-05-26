@@ -14,8 +14,8 @@ export default function Register() {
   async function handleSignInCalendar() {
     await signIn('google')
   }
-
   const hasAuthError = !!router.query.error
+  console.log(session)
   return (
     <Container>
       <Header>
