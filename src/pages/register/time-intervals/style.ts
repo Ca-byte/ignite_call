@@ -23,7 +23,7 @@ export const IntervalItem = styled('div', {
   },
 })
 
-export const Intervalday = styled('div', {
+export const IntervalDay = styled('div', {
   display: 'flex',
   alignItems: 'center',
   gap: '$3',
