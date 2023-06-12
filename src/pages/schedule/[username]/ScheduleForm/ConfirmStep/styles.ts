@@ -1,6 +1,6 @@
 import { Box, Text, styled } from '@ignite-ui/react'
 
-export const ConnfirmForm = styled(Box, {
+export const ConfirmForm = styled(Box, {
   maxWidth: 540,
   margin: '$6 auto 0',
   display: 'flex',
@@ -14,7 +14,7 @@ export const ConnfirmForm = styled(Box, {
   },
 })
 
-export const ConnfirmHeader = styled('div', {
+export const ConfirmHeader = styled('div', {
   display: 'flex',
   alignItems: 'center',
   gap: '$4',
@@ -36,11 +36,11 @@ export const ConnfirmHeader = styled('div', {
   },
 })
 
-export const ConnfirmError = styled(Text, {
+export const FormError = styled(Text, {
   color: '#F75A68',
 })
 
-export const ConnfirmActions = styled('div', {
+export const ConfirmActions = styled('div', {
   display: 'flex',
   justifyContent: 'flex-end',
   gap: '$2',
