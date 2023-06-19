@@ -45,12 +45,10 @@ export default async function handle(
     return res.json({ availability: [] })
   }
 
-  // eslint-disable-next-line camelcase
   const { time_start_in_minutes, time_end_in_minutes } = userAvailability
 
-  // eslint-disable-next-line camelcase
   const startHour = time_start_in_minutes / 60
-  // eslint-disable-next-line camelcase
+
   const endHour = time_end_in_minutes / 60
 
   const possibleTimes = Array.from({ length: endHour - startHour }).map(
