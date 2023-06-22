@@ -7,7 +7,7 @@ import {
   CalendarBody,
   CalendarDay,
 } from './styles'
-import { GetWeekDays } from '@/src/utils/get-week-days'
+import { getWeekDays } from '@/src/utils/get-week-days'
 import { useMemo, useState } from 'react'
 import dayjs from 'dayjs'
 
@@ -43,7 +43,7 @@ export function Calendar({ selectedDate, onDateSelected }: CalendarProps) {
     setCurrentDate(previousMonthDate)
   }
 
-  const shortWeekDays = GetWeekDays({ short: true })
+  const shortWeekDays = getWeekDays({ short: true })
 
   const currentMonth = currentDate.format('MMMM')
   const currentYear = currentDate.format('YYYY')

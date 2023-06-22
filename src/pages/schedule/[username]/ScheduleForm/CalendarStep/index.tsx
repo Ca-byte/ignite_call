@@ -34,10 +34,11 @@ export function CalendarStep({ onSelectDateTime }: CalendarStepProps) {
   const selectedDateWithoutTime = selectedDate
     ? dayjs(selectedDate).format('YYYY-MM-DD')
     : null
+
   const { data: availability } = useQuery<Availability>(
     ['availability', selectedDateWithoutTime],
     async () => {
-      const response = await api.get(`/users/${username}/avalaibility`, {
+      const response = await api.get(`/users/${username}/availability`, {
         params: {
           date: selectedDateWithoutTime,
         },
@@ -60,11 +61,13 @@ export function CalendarStep({ onSelectDateTime }: CalendarStepProps) {
   return (
     <Container isTimePickerOpen={isDateSelected}>
       <Calendar selectedDate={selectedDate} onDateSelected={setSelectedDate} />
+
       {isDateSelected && (
         <TimePicker>
           <TimePickerHeader>
             {weekDay}, <span>{todayDate}</span>
           </TimePickerHeader>
+
           <TimePickerList>
             {availability?.possibleTimes.map((hour) => {
               return (
@@ -73,7 +76,7 @@ export function CalendarStep({ onSelectDateTime }: CalendarStepProps) {
                   onClick={() => handleSelectTime(hour)}
                   disabled={!availability.availableTimes.includes(hour)}
                 >
-                  {String(hour).padStart(2, '0')}:00
+                  {String(hour).padStart(2, '0')}:00h
                 </TimePickerItem>
               )
             })}

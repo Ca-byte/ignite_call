@@ -16,7 +16,7 @@ import {
 } from './style'
 import { ArrowRight } from 'phosphor-react'
 import { Controller, useFieldArray, useForm } from 'react-hook-form'
-import { GetWeekDays } from '@/src/utils/get-week-days'
+import { getWeekDays } from '@/src/utils/get-week-days'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { convertTimeStringToMinutes } from '@/src/utils/convert-time-string-to-minutes'
@@ -87,7 +87,7 @@ export default function TimeIntervals() {
 
   const router = useRouter()
 
-  const weekDays = GetWeekDays()
+  const weekDays = getWeekDays()
 
   const { fields } = useFieldArray({
     control,
