@@ -16,6 +16,7 @@ interface Availability {
   possibleTimes: number[]
   availableTimes: number[]
 }
+
 interface CalendarStepProps {
   onSelectDateTime: (date: Date) => void
 }
@@ -49,6 +50,7 @@ export function CalendarStep({ onSelectDateTime }: CalendarStepProps) {
       enabled: !!selectedDate,
     },
   )
+
   function handleSelectTime(hour: number) {
     const dateWithTime = dayjs(selectedDate)
       .set('hour', hour)

@@ -48,7 +48,7 @@ export function ConfirmStep({
     onCancelConfirmation()
   }
 
-  const describedDate = dayjs(schedulingDate).format('DD[ de ]MMMM[ de ]YYYY')
+  const describedDate = dayjs(schedulingDate).format('MMMMDD[ of ]YYYY')
   const describedTime = dayjs(schedulingDate).format('HH:mm[h]')
 
   return (
@@ -84,7 +84,7 @@ export function ConfirmStep({
         <TextArea {...register('notes')} />
       </label>
       <ConfirmActions>
-        <Button type="button" variant="tertiary">
+        <Button type="button" variant="tertiary" onClick={onCancelConfirmation}>
           Cancel
         </Button>
         <Button type="submit" disabled={isSubmitting}>
