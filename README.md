@@ -58,7 +58,7 @@ This project was developed using the following technologies:
 
 ## :clipboard: Requirements
 
-Before starting you need :checkered_flag:, have installed the [Git](https://git-scm.com) e [Node](https://nodejs.org/en/).
+Before starting you need :checkered_flag:, have installed the [Git](https://git-scm.com) and [Node](https://nodejs.org/en/).
 You will need to install docker, please do not say you are using Windows :( [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
 <br>
