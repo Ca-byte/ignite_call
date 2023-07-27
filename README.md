@@ -1,5 +1,5 @@
 
-<div style="text-align: center;" id="top">
+<div align="center" id="top">
   <img alt="" src="./public/cover.png" width="700px">
   <img alt="" src="./public/cover_username.png" width="700px">
   <img alt="" src="./public/register.png" width="700px">
@@ -13,7 +13,7 @@
   <img alt="" src="./public/meeting_time.png" width="700px">   
 </div>
 
-<div style="text-align: center;">
+<div align="center">
   <a href="#memo-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#clipboard-requirements">Requirements</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -52,6 +52,8 @@ This project was developed using the following technologies:
 - [Dayjs](https://day.js.org/)
 - [Prisma](https://www.prisma.io/)
 - [Nookies](https://github.com/maticzav/nookies)
+
+  
 <br>
 
 ---
