@@ -1,5 +1,5 @@
 
-<div style="text-align: center;">
+<div style="text-align: center;" id="top">
   <img alt="" src="./public/cover.png" width="700px">
   <img alt="" src="./public/cover_username.png" width="700px">
   <img alt="" src="./public/register.png" width="700px">
